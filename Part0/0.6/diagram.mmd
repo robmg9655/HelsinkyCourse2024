@@ -1,0 +1,14 @@
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: POST /exampleapp/new_note_spa
+    Note right of browser: The browser sends the new note's content as JSON
+    activate server
+    server-->>browser: Status code = 201 Created
+    deactivate server
+
+    Note right of browser: The browser updates the DOM dynamically to include the new note
+
+```
