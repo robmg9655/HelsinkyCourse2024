@@ -1,1 +1,0 @@
-# HelsinkyCourse2024
